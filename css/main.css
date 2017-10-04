@@ -146,14 +146,10 @@ body {
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 }
 .fa-arrow-down {
+	display: block;
+	margin: 0 auto;
 	text-align: center;
 }
 .site_header_button_active {
