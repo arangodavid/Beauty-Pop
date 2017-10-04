@@ -146,8 +146,15 @@ body {
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+}
+.fa-arrow-down {
+	text-align: center;
 }
 .site_header_button_active {
 	text-shadow: none;
