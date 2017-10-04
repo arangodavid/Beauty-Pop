@@ -1,0 +1,299 @@
+<!doctype html>
+  <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BeautyPop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="smartcart/dist/css/smart_cart.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class='site_wrapper'>
+      <header class="site_header">
+        <div class="site_hamburger_container">
+          <div class="site_hamburger_card">
+            <div class="hamburger">&#9776;</div>
+            <div class="close_hamburger">&#x2715;</div>
+          </div>
+          <ul class="site_nav">
+            <li class="site_nav_item_container"><a class="site_nav_item" href="index.html">Home</a></li>
+            <li class="site_nav_item_container"><a class="site_nav_item" href="#">About</a></li>
+            <li class="site_nav_item_container"><a class="site_nav_item" href="#">Reviews</a></li>
+          </ul>    
+        </div>
+        <button class='site_header_gallery_button site_header_left_button'><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></button>
+        <button class='site_header_gallery_button site_header_right_button'><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></button>
+        <button id='start-scroll' class='site_header_button'><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+      </header>
+      <div class="site_section_one">
+        <div id='scroll-to' class="section_one_container">
+          <img class="section_one_lashes pumpkin-spice-img" src="images/halloween.jpg" alt="Eye lash product" />
+          <span class="section_one_lash_name"><span class='promotion_word'>New</span> Pumpkin Spice</span>
+        </div>
+        <div class="section_one_container">
+          <img class="section_one_lashes beautylicious-img" src="images/gold_lashes.jpg" alt="Eye lash product" />
+          <span class="section_one_lash_name">Beautylicious</span>
+        </div>
+        <div class="section_one_container">
+          <img class="section_one_lashes tuti-fruitie-img" src="images/plum_lashes.jpg" alt="Eye lash product" />
+          <span class="section_one_lash_name">Tuti Fruitie</span>
+        </div>
+        <div class="section_one_container">
+          <img class="section_one_lashes eye-candy-img" src="images/silver_lashes.jpg" alt="Eye lash product" />
+          <span class="section_one_lash_name">Eye Candy</span>
+        </div>
+        <div class="section_one_container">
+          <img class="section_one_lashes sugar-baby-img" src="images/pink_lashes.jpg" alt="Eye lash product" />
+          <span class="section_one_lash_name">Sugar Baby</span>
+        </div>
+        <div class="modal_root">
+          <div class="modal_background_opacity"></div>
+          <div class="modal_container">
+            <section class="container modal_inner_container">
+              <div class="row modal_lash_container">  
+                <div class="col-md-8 lash_modal sugar_baby_modal">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      Products
+                      <button class="close-modal-button" type="button">Continue Shopping</button>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                      <!-- BEGIN PRODUCTS -->
+                        <div class="col-md-4 col-sm-6 modal_thumbnail">
+                          <div class="sc-product-item thumbnail">
+                            <button class='module_image_button module_image_button_left sugar_baby_button_left'><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
+                            <button class='module_image_button module_image_button_right sugar_baby_button_right'><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
+                            <img data-name="product_image" class="modal_product_img" id="sugar_baby_imgs" src="images/sugar-baby/sugarbaby_one.jpg" alt="showcase image">
+                            <div class="caption">
+                              <h4 data-name="product_name">Sugar Baby</h4>
+                              <p data-name="product_desc">Product details: Looking to spice up your look? Our most popular everyday mink lash that gives you a full finish.</p>
+                              <p>100% Cruelty Free</p>
+                              <p>Reusable (Up to 15 Wears)</p>
+                              <hr class="line">
+                              <div>
+                                <div class="form-group2">
+                                  <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                </div>
+                                <strong class="price pull-left">$20</strong>
+                                <input name="product_price" value="20" type="hidden" />
+                                <input name="product_id" value="12" type="hidden" />
+                                <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                              </div>
+                                <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- END PRODUCTS -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 lash_modal beautylicious_modal">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      Products
+                      <button class="close-modal-button" type="button">Continue Shopping</button>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                      <!-- BEGIN PRODUCTS -->
+                        <div class="col-md-4 col-sm-6 modal_thumbnail">
+                          <div class="sc-product-item thumbnail">
+                            <button class='module_image_button module_image_button_left beautylicious_button_left'><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
+                            <button class='module_image_button module_image_button_right beautylicious_button_right'><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
+                            <img data-name="product_image" class="modal_product_img" id="beautylicious_imgs" src="images/beautylicious/beautylicious_one.jpg" alt="showcase image">
+                            <div class="caption">
+                              <h4 data-name="product_name">Beautylicious</h4>
+                              <p data-name="product_desc">Product details: These 3D luxury mink lashes are a perfect touch to achieve a glamorous look. Long and thick yet super light weight. A very comfortable wear.</p>
+                              <p>100% Cruelty Free</p>
+                              <p>Reusable (Up to 15 Wears)</p>
+                              <hr class="line">
+                              <div>
+                                <div class="form-group2">
+                                  <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                </div>
+                                <strong class="price pull-left">$20</strong>
+                                <input name="product_price" value="20" type="hidden" />
+                                <input name="product_id" value="12" type="hidden" />
+                                <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                              </div>
+                                <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- END PRODUCTS -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 lash_modal pumpkin_modal">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      Products
+                      <button class="close-modal-button" type="button">Continue Shopping</button>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                      <!-- BEGIN PRODUCTS -->
+                        <div class="col-md-4 col-sm-6 modal_thumbnail">
+                          <div class="sc-product-item thumbnail">
+                            <button class='module_image_button module_image_button_left pumpkin_spice_button_left'><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
+                            <button class='module_image_button module_image_button_right pumpkin_spice_button_right'><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
+                            <img data-name="product_image" class="modal_product_img" id="pumpkin-imgs" src="images/pumpkin-spice/pumpkin_one.jpg" alt="showcase image">
+                            <div class="caption">
+                              <h4 data-name="product_name">Pumpkin Spice</h4>
+                              <p data-name="product_desc">Product details: These natural mink lashes are bold and thick at the ends to define your lash line.Perfect for everyday or any occasion.</p>
+                              <p>100% Cruelty Free</p>
+                              <p>Reusable (Up to 15 Wears)</p>
+                              <hr class="line">
+                              <div>
+                                <div class="form-group2">
+                                  <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                                </div>
+                                <strong class="price pull-left">$20</strong>
+                                <input name="product_price" value="20" type="hidden" />
+                                <input name="product_id" value="12" type="hidden" />
+                                <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                              </div>
+                                <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                      <!-- END PRODUCTS -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 lash_modal tuti_fruitie_modal">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    Products
+                    <button class="close-modal-button" type="button">Continue Shopping</button>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                    <!-- BEGIN PRODUCTS -->
+                      <div class="col-md-4 col-sm-6 modal_thumbnail">
+                        <div class="sc-product-item thumbnail">
+                          <button class='module_image_button module_image_button_left tuti_fruitie_button_left'><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
+                          <button class='module_image_button module_image_button_right tuti_fruitie_button_right'><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
+                          <img data-name="product_image" class="modal_product_img" id="tuti_fruitie_imgs" src="images/tutie-fruitie/tutie_one.jpg" alt="showcase image">
+                          <div class="caption">
+                            <h4 data-name="product_name">Tuti Fruitie</h4>
+                            <p data-name="product_desc">Product details: Looking for the most natural look? These blend so well with your own lashes to go for a more subtle yet flirty look.</p>
+                            <p>100% Cruelty Free</p>
+                            <p>Reusable (Up to 15 Wears)</p>
+                            <hr class="line">
+                            <div>
+                              <div class="form-group2">
+                                <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                              </div>
+                              <strong class="price pull-left">$20</strong>
+                              <input name="product_price" value="20" type="hidden" />
+                              <input name="product_id" value="12" type="hidden" />
+                              <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                            </div>
+                              <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- END PRODUCTS -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 lash_modal eye_candy_modal">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  Products
+                  <button class="close-modal-button" type="button">Continue Shopping</button>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                  <!-- BEGIN PRODUCTS -->
+                    <div class="col-md-4 col-sm-6 modal_thumbnail">
+                      <div class="sc-product-item thumbnail">
+                        <button class='module_image_button module_image_button_left eye_candy_button_left'><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
+                        <button class='module_image_button module_image_button_right eye_candy_button_right'><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
+                        <img data-name="product_image" class="modal_product_img" id="eye_candy_imgs" src="images/eye-candy/eyecandy_one.jpg" alt="showcase image">
+                        <div class="caption">
+                          <h4 data-name="product_name">Eye candy</h4>
+                          <p data-name="product_desc">Product details: This super fluffy mink fur lash creates the perfect bold finish to your look.</p>
+                          <p>100% Cruelty Free</p>
+                          <p>Reusable (Up to 15 Wears)</p>
+                          <hr class="line">
+                          <div>
+                            <div class="form-group2">
+                              <input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+                            </div>
+                            <strong class="price pull-left">$20</strong>
+                            <input name="product_price" value="20" type="hidden" />
+                            <input name="product_id" value="12" type="hidden" />
+                            <button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+                          </div>
+                            <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- END PRODUCTS -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <aside class="col-md-4 modal_checkout">
+              <!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr -->
+              <!-- Paypal Sandbox Submit URL: https://www.sandbox.paypal.com/cgi-bin/webscr -->            
+              <!-- Paypal Cart submit form -->
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="POST"> 
+              <!-- SmartCart element -->
+                <div id="smartcart"></div>
+                  <!-- Paypal required info, Please update based on your details -->
+                  <input name="business" value="beautypopbyashley@gmail.com" type="hidden">            
+                  <input name="currency_code" value="USD" type="hidden">
+                  <input name="return" value="http://www.yourdomain.com/yoursuccessurl" type="hidden">            
+                  <input name="cancel_return" value="http://www.yourdomain.com/yourcancelurl" type="hidden">
+                  <input name="cmd" value="_cart" type="hidden">    
+                  <input name="upload" value="1" type="hidden">            
+                  </form>
+            </aside>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer class="site_footer">
+        <div class="footer_logo_container">
+          <div class="logo_lines"></div>
+          <img class="footer_logo" src="images/logo.jpg" alt="Website Logo" />
+          <div class="logo_lines"></div>
+        </div>
+        <div class="footer_social_icons">
+          <a href="https://www.etsy.com/" target='_blank'><i class="fa fa-etsy" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer_bottom">
+          <small class="footer_bottom_disclosures">&copy; 2017 Beauty Pop. All rights reserved.</small>
+          <small class="footer_bottom_disclosures">Website designed and developed by David Arango</small>
+        </div>  
+      </footer>
+    </div> 
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="smartcart/dist/js/jquery.smartCart.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
