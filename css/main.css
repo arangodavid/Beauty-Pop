@@ -141,6 +141,7 @@ body {
 	background: linear-gradient(white, black);
 	opacity: .9;
 	text-shadow: .1rem .1rem 0 black;
+	text-align: center;
 	border: none;
 	border-radius: .2rem;
 	-webkit-transition: all .3s ease;
