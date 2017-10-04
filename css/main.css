@@ -97,41 +97,54 @@ body {
 	text-shadow: .05rem .05rem 0 black;
 }
 .site_header_gallery_button {
-		position: absolute;
-		top: 50%;
-		background: none;
-		border: none;
-		color: white;
-	}
-	.site_header_left_button {
-		left: 2%;
-	}
-	.site_header_right_button {
-		right: 2%;
-	}
-	.site_header_button {
-		position: absolute;
-		left: 45%;
-		bottom: 5%;
-		font-size: 1.5rem;
-		background: transparent;
-		color: white;
-		font-weight: 100;
-		width: 12%;
-		height: 12%;
-		background: linear-gradient(white, black);
-		opacity: .9;
-		text-shadow: .1rem .1rem 0 black;
-		border: none;
-		border-radius: .2rem;
-		transition: all .3s ease;
-	}
-	.site_header_button_active {
-		text-shadow: none;
-		background: linear-gradient(white, #FF601D);
-		color: black;
-	}
+	position: absolute;
+	top: 50%;
+	background: none;
+	border: none;
+	color: white;
+}
+.site_header_left_button {
+	left: 2%;
+}
+.site_header_right_button {
+	right: 2%;
+}
+.site_header_button {
+	position: absolute;
+	left: 45%;
+	bottom: 5%;
+	font-size: 1.5rem;
+	background: transparent;
+	color: white;
+	font-weight: 100;
+	width: 12%;
+	height: 12%;
+	background: linear-gradient(white, black);
+	opacity: .9;
+	text-shadow: .1rem .1rem 0 black;
+	border: none;
+	border-radius: .2rem;
+	transition: all .3s ease;
+}
+.site_header_button_active {
+	text-shadow: none;
+	background: linear-gradient(white, #FF601D);
+	color: black;
+}
 /*header end*/
+/*promotion*/
+.promotion_word {
+	border-radius: .2rem;
+	box-shadow: inset 0 0 .5rem red;
+	padding: .4rem;
+	color: white;
+	text-shadow: .1rem .1rem 0 black;
+	display: block;
+	text-align: center;
+	width: 50%;
+	transform: translate(50%, 0);
+}
+/*promotion end*/
 /*section one*/
 .site_section_one {
 	height: 60rem;
@@ -197,6 +210,7 @@ body {
 	left: 5%;
 	background: white;
 	padding-top: 1.5rem;
+	background: white;
 	background: url(../images/pic_one.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -413,15 +427,11 @@ body {
 		height: 10%;
 	}
 	/*header end*/
-	/*promotion*/
+	/*Promotion*/
 	.promotion_word {
-		border-radius: .2rem;
-		box-shadow: inset 0 0 .5rem red;
-		padding: .4rem;
-		color: white;
-		text-shadow: .1rem .1rem 0 black;
+		display: inline;
 	}
-	/*promotion end*/
+	/*Promotion end*/
 	/*section one*/
 	.site_section_one {
 		flex-flow: row wrap;
