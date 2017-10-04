@@ -200,7 +200,7 @@ $(document).ready(function() {
 // Hero image gallery with timer
 ////
 
-const heroImages = ['../beauty_pop/images/hero/hero.jpg', '../beauty_pop/images/hero/hero_one.jpg', '../beauty_pop/images/hero/hero_four.jpg'];
+const heroImages = ['../Beauty_Pop/images/hero/hero.jpg', '../Beauty_Pop/images/hero/hero_two.jpg', '../Beauty_Pop/images/hero/hero_four.jpg'];
 let heroCounter = 0;
 $('.site_header_right_button').on('click', () => {
   heroCounter++;
