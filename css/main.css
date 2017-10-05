@@ -149,11 +149,6 @@ body {
 button#start-scroll.site_header_button {
 	padding: 0;
 }
-.fa-arrow-down {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
 .site_header_button_active {
 	text-shadow: none;
 	background: -webkit-gradient(linear, left top, left bottom, from(white), to(#FF601D));
