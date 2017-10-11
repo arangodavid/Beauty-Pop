@@ -69,9 +69,9 @@ $(document).ready(function() {
 ////
   const lashOne = ['images/pumpkin-spice/pumpkin_one.jpg', 'images/pumpkin-spice/pumpkin_two.jpg', 'images/pumpkin-spice/pumpkin_four.jpg'];
   const lashTwo = ['images/beautylicious/beautylicious_one.jpg', 'images/beautylicious/beautylicious_two.jpg' ];
-  const lashThree = ['images/tutie-fruitie/tutie_one.jpg', 'images/tutie-fruitie/tutie_two.jpg'];
-  const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg'];
-  const lashFive= ['images/sugar-baby/sugarbaby_one.jpg', 'images/sugar-baby/sugarbaby_two.jpg', 'images/sugar-baby/sugarbaby_three.jpg' ];
+  const lashThree = ['images/tutie-fruitie/tutie_one.jpg'];
+  const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg', 'images/eye-candy/eyecandy_three.jpg'];
+  const lashFive= ['images/sugar-baby/sugarbaby_two.jpg', 'images/sugar-baby/sugarbaby_three.jpg'];
   let countOne = 0;
   let countTwo = 0;
   let countThree = 0;
@@ -188,45 +188,42 @@ $(document).ready(function() {
     });
   });
 ////
-// Animated scroll
-////
-  $('#start-scroll').click(() => {
-    $('#start-scroll').toggleClass('site_header_button_active');
-    $('html, body').animate({
-      scrollTop: $('#scroll-to').offset().top
-    }, 2000);
-  });
-////
 // Hero image gallery with timer
 ////
 
-const heroImages = ['../beauty_pop/images/hero/hero.jpg', '../beauty_pop/images/hero/hero_two.jpg', '../beauty_pop/images/hero/hero_four.jpg'];
-let heroCounter = 0;
-$('.site_header_right_button').on('click', () => {
-  heroCounter++;
-  $(heroImages).each(() => {
-    if(heroCounter >= heroImages.length) {
-      heroCounter = 0;
-      $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-    }else {
-      $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-    }
+  const heroImages = ['../Beauty_Pop/images/hero/hero.jpg', '../Beauty_Pop/images/hero/hero_two.jpg', '../Beauty_Pop/images/hero/hero_four.jpg'];
+  let heroCounter = 0;
+  $('.site_header_right_button').on('click', () => {
+    heroCounter++;
+    $(heroImages).each(() => {
+      if(heroCounter >= heroImages.length) {
+        heroCounter = 0;
+        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
+      }else {
+        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
+      }
+    });
   });
-});
-$('.site_header_left_button').on('click', () => {
-  heroCounter--;
-  $(heroImages).each(() => {
-    if(heroCounter < 0) {
-      heroCounter = heroImages.length - 1;
-      $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-    }else {
-      $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-    }
+  $('.site_header_left_button').on('click', () => {
+    heroCounter--;
+    $(heroImages).each(() => {
+      if(heroCounter < 0) {
+        heroCounter = heroImages.length - 1;
+        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
+      }else {
+        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
+      }
+    });
   });
-});
-
-
-
+  ////
+  // Animated scroll
+  ////
+  // $('#start-scroll').click(() => {
+  //   $('#start-scroll').toggleClass('site_header_button_active');
+  //   $('html, body').animate({
+  //     scrollTop: $('#scroll-to').offset().top
+  //   }, 2000);
+  // });
 });
 
 
