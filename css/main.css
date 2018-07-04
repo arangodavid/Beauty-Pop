@@ -30,7 +30,7 @@ body {
 .site_header {
 	height: 20rem;
 	position: relative;
-	background: url(../images/hero/hero.jpg);
+	background: url(../images/hero/hero_two.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -182,7 +182,7 @@ button#start-scroll.site_header_button {
 /*promotion end*/
 /*section one*/
 .site_section_one {
-	height: 60rem;
+	height: 86rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -358,9 +358,6 @@ button#start-scroll.site_header_button {
 }
 /*footer end*/
 @media only screen and (min-width: 400px) {
-	.site_section_one {
-		height: 70rem;
-	}
 	.section_one_lashes {
 		width: 13rem;
 		height: 12rem;
@@ -390,7 +387,6 @@ button#start-scroll.site_header_button {
 		-ms-flex-pack: distribute;
 		justify-content: space-around;
 		padding-top: .5rem;
-		background: black;
 	}
 	.section_one_container {
 		width: 48%;
@@ -497,9 +493,9 @@ button#start-scroll.site_header_button {
 		justify-content: space-around;
 		width: 40%;
 		position: relative;
-		background: transparent;	
+		background: transparent;    	
 		height: -webkit-max-content;	
-		height: -moz-max-content;	
+		height: -moz-max-content;   	
 		height: max-content;
 		font-size: 1.2rem;
 	}
@@ -527,6 +523,7 @@ button#start-scroll.site_header_button {
 	/*Promotion end*/
 	/*section one*/
 	.site_section_one {
+		padding-top: 0;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-ms-flex-flow: row wrap;
@@ -537,12 +534,15 @@ button#start-scroll.site_header_button {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		background: black;
+		background: #FEC1CC;
 	}
 	.section_one_container {
 		width: 20%;
 		align-items: center;
 		height: 42rem;
+	}
+	.section_one_container:nth-of-type(6) {
+		background: transparent;
 	}
 	.section_one_container:last-of-type {
 		width: 20%;

@@ -36,20 +36,20 @@ $(document).ready(function() {
 ////
 // Opens and closes modal
 ////
-  $('.sugar-baby-img').on('click', () => {
-  	$('.modal_root').addClass('modal-show');
+  $('.rose-img').on('click', () => {
+	$('.modal_root').addClass('modal-show');
     $('.lash_modal').addClass('lash-modal-hide');
-    $('.sugar_baby_modal').removeClass('lash-modal-hide');
+    $('.rose_modal').removeClass('lash-modal-hide');
   });
   $('.pumpkin-spice-img').on('click', () => {
     $('.modal_root').addClass('modal-show');
     $('.lash_modal').addClass('lash-modal-hide');
     $('.pumpkin_modal').removeClass('lash-modal-hide');
   });
-  $('.beautylicious-img').on('click', () => {
+  $('.divina-img').on('click', () => {
     $('.modal_root').addClass('modal-show');
     $('.lash_modal').addClass('lash-modal-hide');
-    $('.beautylicious_modal').removeClass('lash-modal-hide');
+    $('.divina_modal').removeClass('lash-modal-hide');
   });
   $('.tuti-fruitie-img').on('click', () => {
     $('.modal_root').addClass('modal-show');
@@ -61,6 +61,11 @@ $(document).ready(function() {
     $('.lash_modal').addClass('lash-modal-hide');
     $('.eye_candy_modal').removeClass('lash-modal-hide');
   });
+  $('.25-img').on('click', () => {
+    $('.modal_root').addClass('modal-show');
+    $('.lash_modal').addClass('lash-modal-hide');
+    $('.25_modal').removeClass('lash-modal-hide');
+  });
   $('.close-modal-button').on('click', () => {
     $('.modal_root').removeClass('modal-show');
   });
@@ -68,15 +73,17 @@ $(document).ready(function() {
 // Modal Image carousel
 ////
   const lashOne = ['images/pumpkin-spice/pumpkin_one.jpg', 'images/pumpkin-spice/pumpkin_two.jpg', 'images/pumpkin-spice/pumpkin_four.jpg'];
-  const lashTwo = ['images/beautylicious/beautylicious_one.jpg', 'images/beautylicious/beautylicious_two.jpg' ];
-  const lashThree = ['images/tutie-fruitie/tutie_one.jpg'];
+  const lashTwo = ['images/divina/divina_1.jpg', 'images/divina/divina_2.jpg', 'images/divina/divina_3.jpg', 'images/divina/divina_4.jpg'];
+  const lashThree = ['images/tuti-fruiti/tuti_one.jpg', 'images/tuti-fruiti/plum_lashes.jpg'];
   const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg', 'images/eye-candy/eyecandy_three.jpg'];
-  const lashFive= ['images/sugar-baby/sugarbaby_two.jpg', 'images/sugar-baby/sugarbaby_three.jpg'];
+  const lashFive= ['images/rose/rose_1.jpg', 'images/rose/rose_2.jpg'];
+  const lashSix= ['images/25/25_lash.png', 'images/25/25_1.jpg'];
   let countOne = 0;
   let countTwo = 0;
   let countThree = 0;
   let countFour = 0;
   let countFive = 0;
+  let countSix = 0;
   $('.pumpkin_spice_button_right').on('click', () => {
     countOne++;
     $(lashOne).each(() => {
@@ -99,25 +106,25 @@ $(document).ready(function() {
       }
     });
   });
-  $('.beautylicious_button_right').on('click', () => {
+  $('.divina_button_right').on('click', () => {
     countTwo++;
     $(lashTwo).each(() => {
       if(countTwo >= lashTwo.length) {
         countTwo = 0;
-        $('#beautylicious_imgs').attr('src', lashTwo[countTwo]);
+        $('#divina_imgs').attr('src', lashTwo[countTwo]);
       }else {
-        $('#beautylicious_imgs').attr('src', lashTwo[countTwo]);
+        $('#divina_imgs').attr('src', lashTwo[countTwo]);
       }
     });
   });
-  $('.beautylicious_button_left').on('click', () => {
+  $('.divina_button_left').on('click', () => {
     countTwo--;
     $(lashTwo).each(() => {
       if(countTwo < 0){
         countTwo = lashTwo.length-1;
-        $('#beautylicious_imgs').attr('src', lashTwo[countTwo]);
+        $('#divina_imgs').attr('src', lashTwo[countTwo]);
       }else {
-        $('#beautylicious_imgs').attr('src', lashTwo[countTwo]);
+        $('#divina_imgs').attr('src', lashTwo[countTwo]);
       }
     });
   });
@@ -165,25 +172,47 @@ $(document).ready(function() {
       }
     });
   });
-  $('.sugar_baby_button_right').on('click', () => {
+  $('.rose_button_right').on('click', () => {
     countFive++;
     $(lashFive).each(() => {
       if(countFive >= lashFive.length) {
         countFive = 0;
-        $('#sugar_baby_imgs').attr('src', lashFive[countFive]);
+        $('#rose_imgs').attr('src', lashFive[countFive]);
       }else {
-        $('#sugar_baby_imgs').attr('src', lashFive[countFive]);
+        $('#rose_imgs').attr('src', lashFive[countFive]);
       }
     });
   });
-  $('.sugar_baby_button_left').on('click', () => {
+  $('.rose_button_left').on('click', () => {
     countFive--;
     $(lashFive).each(() => {
       if(countFive < 0){
         countFive = lashFive.length-1;
-        $('#sugar_baby_imgs').attr('src', lashFive[countFive]);
+        $('#rose_imgs').attr('src', lashFive[countFive]);
       }else {
-        $('#sugar_baby_imgs').attr('src', lashFive[countFive]);
+        $('#rose_imgs').attr('src', lashFive[countFive]);
+      }
+    });
+  });
+  $('.25_button_left').on('click', () => {
+    countSix++;
+    $(lashSix).each(() => {
+      if(countSix >= lashSix.length) {
+        countSix = 0;
+        $('#25_imgs').attr('src', lashSix[countSix]);
+      }else {
+        $('#25_imgs').attr('src', lashSix[countSix]);
+      }
+    });
+  });
+  $('.25_button_right').on('click', () => {
+    countSix--;
+    $(lashSix).each(() => {
+      if(countSix < 0){
+        countSix = lashSix.length-1;
+        $('#25_imgs').attr('src', lashSix[countSix]);
+      }else {
+        $('#25_imgs').attr('src', lashSix[countSix]);
       }
     });
   });
@@ -191,30 +220,30 @@ $(document).ready(function() {
 // Hero image gallery with timer
 ////
 
-  const heroImages = ['../Beauty_Pop/images/hero/hero.jpg', '../Beauty_Pop/images/hero/hero_two.jpg', '../Beauty_Pop/images/hero/hero_four.jpg'];
-  let heroCounter = 0;
-  $('.site_header_right_button').on('click', () => {
-    heroCounter++;
-    $(heroImages).each(() => {
-      if(heroCounter >= heroImages.length) {
-        heroCounter = 0;
-        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-      }else {
-        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-      }
-    });
-  });
-  $('.site_header_left_button').on('click', () => {
-    heroCounter--;
-    $(heroImages).each(() => {
-      if(heroCounter < 0) {
-        heroCounter = heroImages.length - 1;
-        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-      }else {
-        $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-      }
-    });
-  });
+  // const heroImages = ['../Beauty_Pop/images/hero/hero_two.jpg'];
+  // let heroCounter = 0;
+  // $('.site_header_right_button').on('click', () => {
+  //   heroCounter++;
+  //   $(heroImages).each(() => {
+  //     if(heroCounter >= heroImages.length) {
+  //       heroCounter = 0;
+  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
+  //     }else {
+  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
+  //     }
+  //   });
+  // });
+  // $('.site_header_left_button').on('click', () => {
+  //   heroCounter--;
+  //   $(heroImages).each(() => {
+  //     if(heroCounter < 0) {
+  //       heroCounter = heroImages.length - 1;
+  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
+  //     }else {
+  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
+  //     }
+  //   });
+  // });
   ////
   // Animated scroll
   ////
