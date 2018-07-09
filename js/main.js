@@ -77,7 +77,7 @@ $(document).ready(function() {
   const lashThree = ['images/tuti-fruiti/tuti_one.jpg', 'images/tuti-fruiti/plum_lashes.jpg'];
   const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg', 'images/eye-candy/eyecandy_three.jpg'];
   const lashFive= ['images/rose/rose_1.jpg', 'images/rose/rose_2.jpg'];
-  const lashSix= ['images/25/25_lash.png', 'images/25/25_1.jpg'];
+  const lashSix= ['images/25/25_lash.png', 'images/25/25_2.jpg'];
   let countOne = 0;
   let countTwo = 0;
   let countThree = 0;
@@ -216,43 +216,16 @@ $(document).ready(function() {
       }
     });
   });
-////
-// Hero image gallery with timer
-////
-
-  // const heroImages = ['../Beauty_Pop/images/hero/hero_two.jpg'];
-  // let heroCounter = 0;
-  // $('.site_header_right_button').on('click', () => {
-  //   heroCounter++;
-  //   $(heroImages).each(() => {
-  //     if(heroCounter >= heroImages.length) {
-  //       heroCounter = 0;
-  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-  //     }else {
-  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] +')');
-  //     }
-  //   });
-  // });
-  // $('.site_header_left_button').on('click', () => {
-  //   heroCounter--;
-  //   $(heroImages).each(() => {
-  //     if(heroCounter < 0) {
-  //       heroCounter = heroImages.length - 1;
-  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-  //     }else {
-  //       $('.site_header').css('background-image', 'url(' + heroImages[heroCounter] + ')');
-  //     }
-  //   });
-  // });
   ////
   // Animated scroll
   ////
-  // $('#start-scroll').click(() => {
-  //   $('#start-scroll').toggleClass('site_header_button_active');
-  //   $('html, body').animate({
-  //     scrollTop: $('#scroll-to').offset().top
-  //   }, 2000);
-  // });
+  $('.section_one_container').click(() => {
+    $('#start-scroll').css('position', 'relative');
+    $('#start-scroll').toggleClass('site_header_button_active');
+    $('html, body').animate({
+      scrollTop: $('.modal_container').offset().top
+    }, 2000);
+  });
 });
 
 
