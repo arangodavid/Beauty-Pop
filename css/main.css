@@ -536,17 +536,12 @@ button#start-scroll.site_header_button {
 /*		height: 80rem;*/
   	}
   	.section_one_container {
-  		width: 20%;
+  		width: 26%;
   		padding: 2rem 0;
   		-webkit-box-align: center;
   		-ms-flex-align: center;
   		align-items: center;
   		background: transparent;
-  	}
-  	.section_one_container:last-of-type {
-  		-webkit-transform: translate(0, 25%);
-  		    -ms-transform: translate(0, 25%);
-  		        transform: translate(0, 25%);
   	}
   	.section_one_lashes {
   		-webkit-transition: all .6s ease;
