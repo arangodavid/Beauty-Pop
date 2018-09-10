@@ -66,6 +66,11 @@ $(document).ready(function() {
     $('.lash_modal').addClass('lash-modal-hide');
     $('.25_modal').removeClass('lash-modal-hide');
   });
+  $('.amethyst-img').on('click', () => {
+    $('.modal_root').addClass('modal-show');
+    $('.lash_modal').addClass('lash-modal-hide');
+    $('.amethyst_modal').removeClass('lash-modal-hide');
+  });
   $('.close-modal-button').on('click', () => {
     $('.modal_root').removeClass('modal-show');
   });
@@ -78,12 +83,14 @@ $(document).ready(function() {
   const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg', 'images/eye-candy/eyecandy_three.jpg'];
   const lashFive= ['images/rose/rose_1.jpg', 'images/rose/rose_2.jpg'];
   const lashSix= ['images/25/25_lash.png', 'images/25/25_2.jpg'];
+  const lashSeven= ['images/amethyst/amethyst_five.jpg', 'images/amethyst/amethyst_seven.jpg', 'images/amethyst/amethyst_eight.jpg', 'images/amethyst/amethyst_six.jpg', 'images/amethyst/amethyst_lash_three.png'];
   let countOne = 0;
   let countTwo = 0;
   let countThree = 0;
   let countFour = 0;
   let countFive = 0;
   let countSix = 0;
+  let countSeven = 0;
   $('.pumpkin_spice_button_right').on('click', () => {
     countOne++;
     $(lashOne).each(() => {
@@ -194,7 +201,7 @@ $(document).ready(function() {
       }
     });
   });
-  $('.25_button_left').on('click', () => {
+  $('.25_button_right').on('click', () => {
     countSix++;
     $(lashSix).each(() => {
       if(countSix >= lashSix.length) {
@@ -205,7 +212,7 @@ $(document).ready(function() {
       }
     });
   });
-  $('.25_button_right').on('click', () => {
+  $('.25_button_left').on('click', () => {
     countSix--;
     $(lashSix).each(() => {
       if(countSix < 0){
@@ -213,6 +220,28 @@ $(document).ready(function() {
         $('#25_imgs').attr('src', lashSix[countSix]);
       }else {
         $('#25_imgs').attr('src', lashSix[countSix]);
+      }
+    });
+  });
+  $('.amethyst_button_right').on('click', () => {
+    countSeven++;
+    $(lashSeven).each(() => {
+      if(countSeven >= lashSeven.length) {
+        countSeven = 0;
+        $('#amethyst_imgs').attr('src', lashSeven[countSeven]);
+      }else {
+        $('#amethyst_imgs').attr('src', lashSeven[countSeven]);
+      }
+    });
+  });
+  $('.amethyst_button_left').on('click', () => {
+    countSeven--;
+    $(lashSeven).each(() => {
+      if(countSeven < 0){
+        countSeven = lashSeven.length-1;
+        $('#amethyst_imgs').attr('src', lashSeven[countSeven]);
+      }else {
+        $('#amethyst_imgs').attr('src', lashSeven[countSeven]);
       }
     });
   });
