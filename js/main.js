@@ -83,7 +83,7 @@ $(document).ready(function() {
   const lashFour = ['images/eye-candy/eyecandy_one.jpg', 'images/eye-candy/eyecandy_two.jpg', 'images/eye-candy/eyecandy_three.jpg'];
   const lashFive= ['images/rose/rose_1.jpg', 'images/rose/rose_2.jpg'];
   const lashSix= ['images/25/25_lash.png', 'images/25/25_2.jpg'];
-  const lashSeven= ['images/amethyst/amethyst_five.jpg', 'images/amethyst/amethyst_seven.jpg', 'images/amethyst/amethyst_eight.jpg', 'images/amethyst/amethyst_six.jpg', 'images/amethyst/amethyst_lash_three.png'];
+  const lashSeven= ['images/amethyst/amethyst_seven.jpg', 'images/amethyst/amethyst_six.jpg', 'images/amethyst/amethyst_lash.png'];
   let countOne = 0;
   let countTwo = 0;
   let countThree = 0;
