@@ -30,7 +30,7 @@ body {
 .site_header {
 	height: 20rem;
 	position: relative;
-	background: url(../images/blackfriday.jpg);
+	background: url(../images/hero/christmas.jpg);
 	background-position: center;
 	background-size: cover;
 }
