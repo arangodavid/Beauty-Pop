@@ -30,7 +30,7 @@ body {
 .site_header {
 	height: 20rem;
 	position: relative;
-	background: url(../images/hero/hero-seven.jpg) no-repeat, linear-gradient(to right, #111114, #060B0D);
+	background: url(../images/hero/hero_glitter.jpg) no-repeat, linear-gradient(to right, #111114, #060B0D);
 	background-position: center;
 	background-size: cover;
 }
